@@ -14,14 +14,14 @@ int main(){
     
     int x,y,z;
     x = y = z = 4;
-    */
+    
     
     // airthmetic instructions
     int a = 1, b = 2;
     int sum = a + b;
     int multiply = a * b;
     int x,y = a * b ;
-    
+    */
 
 
 
