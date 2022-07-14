@@ -1,4 +1,5 @@
 # include<stdio.h>
+# include<math.h>
 
 int main(){
     /*
@@ -13,21 +14,20 @@ int main(){
     
     int x,y,z;
     x = y = z = 4;
+    */
     
-// airthmetic instructions
+    // airthmetic instructions
     int a = 1, b = 2;
     int sum = a + b;
     int multiply = a * b;
     int x,y = a * b ;
-    */
-
-    int b , c ;
-    b = c = 1;
-    int a = b + c;
-
-    printf( "a :%d ",&a);
+    
 
 
+
+    
+
+    
 
     return 0;
 }
