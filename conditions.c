@@ -45,7 +45,7 @@ int main(){
             break;
     default : printf("Not a Valid Day!! \n");
     }
-    */
+    
     // Nested if statements:
 
     int number;
@@ -66,5 +66,76 @@ int main(){
     else {
         printf("Negatie number \n");
     }
+// marks if case:
+
+    int marks;
+    printf("Enter marks (0 - 100) : ");
+     scanf("%d",&marks);
+
+    // if(marks >= 0 && marks <= 30 ){
+    //     printf("Fail \n");
+    // } 
+    // else if (marks > 30 && marks <= 100){
+    //     printf("Pass \n");
+    // }else {
+    //     printf("Wrong marks \n");
+    // }
+    // ternary conditions:
+
+   //marks <= 30 ? printf("Fail \n") : printf(" Pass \n");
+   
+    if (marks < 30){
+        printf("C \n");
+
+    }
+    else if (marks >= 30 && marks < 70 ){
+        printf(" B \n");
+    }
+    else if (marks >= 70 && marks <90 ){
+        printf(" A \n");
+    }
+    else{
+        printf("A+ \n");
+    }
+    
+    int x = 2;
+    
+    if (x = 0){
+
+        printf("x is equal to 1 \n");
+        printf("%d \n", x);
+    }
+    else {
+        printf(" x is not equal to 1 \n");
+    }
+    
+    char ch;
+    printf("Enter a character : ");
+    scanf("%c", &ch);
+
+    if (ch >= 'A' && ch <= 'Z'){
+        printf("Upper case \n");
+    }
+    else if (ch >= 'a' && ch <= 'z'){
+        printf("Lower case \n");
+    }
+    else {
+        printf("Not English character");
+    }
+
+   */
+    int n;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+
+    if(n > 0){
+        printf("Natural number \n");
+    }
+    else {
+        printf("Whole number");
+    }
+
+
+
     return 0;
 }
