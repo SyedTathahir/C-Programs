@@ -124,6 +124,7 @@ int main(){
     }
 
    */
+    // check number is whole number or not:
     int n;
     printf("Enter a number: ");
     scanf("%d",&n);
