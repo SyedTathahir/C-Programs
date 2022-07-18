@@ -116,7 +116,7 @@ int main (){
 
     return 0;
 }
-*/
+
 
 int productNumbers(int num1,int num2);
 
@@ -133,4 +133,27 @@ int productNumbers(int num1,int num2){
     int product = num1 * num2;
     return product;
     printf("After Return");
+}
+
+// variable scope :
+local variable: will be  in function block only
+it cannot be used outside a function hence we have 
+to make new variable and assign the function to it.
+
+Global variable : example given.
+*/
+
+int result;
+
+void addNumbers(int num1,int num2){
+
+    result = num1 + num2;
+    printf("Result  = %d ", result);
+}
+
+int main (){
+
+     addNumbers (99,1);
+
+    return 0;
 }
