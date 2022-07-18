@@ -143,7 +143,7 @@ to make new variable and assign the function to it.
 Global variable : example given.
 */
 
-int result;
+int result;// global variable.
 
 void addNumbers(int num1,int num2){
 
