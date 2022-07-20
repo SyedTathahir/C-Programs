@@ -1,8 +1,17 @@
 #include<stdio.h>
 
 int main (){
+    
+    struct structs
+    {
+        /* data */
+    };
+    
 
 
+    
+  
 
-    return 0;
+
+    
 }
