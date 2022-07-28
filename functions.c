@@ -266,7 +266,7 @@ int main ( ){
 int sum (int x,int y){
     return x + y;
 }
-*/
+
 int sum (int a ,int b);
 void printTable(int n);
 
@@ -289,3 +289,40 @@ void printTable(int n){//parameter/formal parameter
         printf("%d\n",i*n);
     }
 }
+
+// Arguments vs Parameters:
+  1. values that are passed in function call
+  1. values in function declaration & definition
+
+  2. used to send values.
+  2. used to receive values.
+
+  3. actual parameter.
+  3. formal parameter.
+
+  Notes:
+  1. function can only return one value at a time
+  2. change to parameter in function don't change
+     values in calling function.
+     because a copy of argument is passed to function.
+
+
+//ex:
+
+void calculatePrice(float value);
+
+int main (){
+    float value = 100.0;
+    calculatePrice(value);
+    printf("Value is : %f \n",value);
+
+
+    return 0;
+}
+void calculatePrice(float value){
+    value = value + (0.18 * value);
+    printf("Final price is: %f \n",value);
+}
+*/
+//Q.library function calculate sqaure of number?
+
