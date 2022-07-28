@@ -323,6 +323,41 @@ void calculatePrice(float value){
     value = value + (0.18 * value);
     printf("Final price is: %f \n",value);
 }
-*/
-//Q.library function calculate sqaure of number?
 
+//Q.library function calculate sqaure of number?
+// math.h pow(number,2)= number^2
+
+int main(){
+int n = 4;
+printf("%f",pow(n,2));
+
+
+return 0;
+}
+*/
+//Q. calculate area of square,circle & rectangle.
+
+float sqareArea(float side);
+float circleArea(float rad);
+float rectangleArea(float a ,float b);
+int main (){
+     float a = 5.0;
+     float b = 10.0;
+     printf("Area is : %f",rectangleArea(a,b));
+
+
+    return 0;
+}
+
+float squareArea(float side){
+
+    return side * side;
+}
+float circleArea(float rad){
+
+    return 3.14 * rad * rad;
+}
+float rectangleArea(float a,float b){
+
+    return a * b;
+}
