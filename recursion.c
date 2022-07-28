@@ -81,8 +81,6 @@ can be done with recursion and vice-versa.
 3.Base Case is the condition which stops recursion
 4.iteration has infinite loop & recursion has STACK OVERFLOW.
 
-
-*/
 //Q.convert celsius to fahrenheit?
 
 float converTemp(float celsius);
@@ -96,3 +94,21 @@ float converTemp(float celsius){
     float far = celsius *(9.0/5.0) + 32;
     return far;
 }
+
+//Q.percentage of marks in science,maths,english?
+
+int caclPercentage(int science,int math ,int english);
+
+int main (){
+    int science = 98;
+    int math = 99;
+    int english = 96;
+
+    printf("Percentage is : %d ",calcPercentage(science,math,english));
+
+    return 0;
+}
+int calcPercentage(int science,int math ,int english){
+    return((science + math + english) / 3);
+}
+*/
