@@ -74,4 +74,25 @@ int fact(int n){
     int factN   = factNm1 * n;
     return factN;
 }
+//Properties of Recursion:
+1. anything that can be done with iteration/loops,
+can be done with recursion and vice-versa.
+2.recursion can sometimes give the most simple solutions
+3.Base Case is the condition which stops recursion
+4.iteration has infinite loop & recursion has STACK OVERFLOW.
+
+
 */
+//Q.convert celsius to fahrenheit?
+
+float converTemp(float celsius);
+
+int main (){
+    float far = converTemp(37);
+    printf("Far : %f",far);
+    return 0;
+}
+float converTemp(float celsius){
+    float far = celsius *(9.0/5.0) + 32;
+    return far;
+}
