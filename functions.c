@@ -175,3 +175,25 @@ void printHello(){
     printf("My name is Jonny\n");
 }
 */
+//Q. write 2 functions "hello" & "goodbye"?
+
+void printHello();
+void printGoodbye();
+
+int main(){
+
+    printHello();
+    printGoodbye();
+
+    return 0;
+}
+
+void printHello(){
+
+    printf("Hello!\n");
+}
+void printGoodbye(){
+
+    printf("Goodbye\n");
+}
+
