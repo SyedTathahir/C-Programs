@@ -33,7 +33,7 @@ to main function.
 it calls itself.
 // base case.
 
-*/
+
 
 //Q.sum of n natural numbers?
 
@@ -54,3 +54,24 @@ int sum(int n){
     int sumN = sumNm1 + n;
     return sumN;
 }
+
+
+int fact(int n);
+
+
+int main(){
+
+    printf("Factorial is %d",fact(5));
+
+    return 0;
+}
+int fact(int n){
+    if (n == 0 ){
+        return 1;
+    }
+
+    int factNm1 = fact(n - 1);
+    int factN   = factNm1 * n;
+    return factN;
+}
+*/
