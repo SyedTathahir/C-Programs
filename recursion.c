@@ -112,3 +112,30 @@ int calcPercentage(int science,int math ,int english){
     return((science + math + english) / 3);
 }
 */
+//Q.print n terms of fibonacci series?
+
+int fib(int n);
+
+int main (){
+    printf("Fibonacci is : %d",fib(6));
+
+
+    return 0;
+}
+int fib (int  n){
+    if (n == 0 || n == 1){//Base Case
+        if (n == 0){
+            return 0;
+        }
+        if (n == 1){
+            return 1;
+        }
+    }
+
+    int fibNm1 = fib(n - 1);
+    int fibNm2 = fib(n - 2);
+    int fibN = fibNm1 + fibNm2;
+    //printf("Fib of %d is : ", n ,fibN);
+    return fibN;
+
+}
