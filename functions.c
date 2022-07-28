@@ -265,7 +265,8 @@ int main ( ){
 
 int sum (int x,int y){
     return x + y;
-}*/
+}
+*/
 int sum (int a ,int b);
 void printTable(int n);
 
@@ -285,6 +286,6 @@ int sum (int x,int y){
 }
 void printTable(int n){//parameter/formal parameter
     for(int i=1;i<=10;i++) {
-        printf(i*n);
+        printf("%d\n",i*n);
     }
 }
