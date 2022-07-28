@@ -196,7 +196,7 @@ void printGoodbye(){
 
     printf("Goodbye\n");
 }
-*/
+
 //Q. if user hola for spanish bonjour for french?
 
 void hola();
@@ -221,4 +221,70 @@ void hola(){
 void bonjour(){
     printf("Bonjour!\n");
 
+}
+
+//properties:
+
+-execution always starts from main
+
+-a function gets called directly or indirectly from
+main
+
+-there can be multiple functions in a program
+
+
+
+// Passing Arguments:
+-Functions can take value called as parameter & 
+give some value called as return value.
+ex:
+void printHello();
+
+void printTable(int n);
+
+int sum (int a, int b);
+
+
+
+int sum (int a ,int b);
+
+
+int main ( ){
+    int a , b;
+    printf("Enter First number: ");
+    scanf("%d", &a);
+    printf("Enter Second number: ");
+    scanf("%d",&b);
+
+    int s = sum (a,b);
+    printf("Sum is %d ",s);
+
+
+    return 0;
+}
+
+int sum (int x,int y){
+    return x + y;
+}*/
+int sum (int a ,int b);
+void printTable(int n);
+
+
+int main ( ){
+    int n;
+    printf("Enter  number: ");
+    scanf("%d", &n);
+    
+    printTable(n);//argument / actual parameter
+
+    return 0;
+}
+
+int sum (int x,int y){
+    return x + y;
+}
+void printTable(int n){//parameter/formal parameter
+    for(int i=1;i<=10;i++) {
+        printf(i*n);
+    }
 }
