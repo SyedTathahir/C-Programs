@@ -141,7 +141,7 @@ it cannot be used outside a function hence we have
 to make new variable and assign the function to it.
 
 Global variable : example given.
-*/
+
 
 int result;// global variable.
 
@@ -156,4 +156,21 @@ int main (){
      addNumbers (99,1);
 
     return 0;
+}*/
+// declaration / protype:
+
+void printHello();
+
+int main (){
+    printHello();// function call
+    printHello();
+    printHello();
+     
+    return 0;
+}
+//function defination:
+
+void printHello(){
+    printf("Hello!\n");
+    printf("My name is Jonny\n");
 }
