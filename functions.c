@@ -156,7 +156,7 @@ int main (){
      addNumbers (99,1);
 
     return 0;
-}*/
+}
 // declaration / protype:
 
 void printHello();
@@ -174,3 +174,4 @@ void printHello(){
     printf("Hello!\n");
     printf("My name is Jonny\n");
 }
+*/
