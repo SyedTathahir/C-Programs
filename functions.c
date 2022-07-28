@@ -174,7 +174,7 @@ void printHello(){
     printf("Hello!\n");
     printf("My name is Jonny\n");
 }
-*/
+
 //Q. write 2 functions "hello" & "goodbye"?
 
 void printHello();
@@ -196,4 +196,29 @@ void printGoodbye(){
 
     printf("Goodbye\n");
 }
+*/
+//Q. if user hola for spanish bonjour for french?
 
+void hola();
+void bonjour();
+
+int main(){
+    printf("enter s for spanish & f for french:");
+    char ch;
+    scanf("%c",&ch);
+    if (ch == 's'){
+        hola();
+    }else{
+       bonjour();
+    }
+    return 0;
+
+
+}
+void hola(){
+    printf("Hola!\n");
+}
+void bonjour(){
+    printf("Bonjour!\n");
+
+}
