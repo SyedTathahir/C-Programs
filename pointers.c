@@ -3,6 +3,9 @@
 int main(){
 
     /*
+    A variable that stores memory address of another
+    variable is called variable.
+
     int age = 22;
     int *ptr = &age;
     //int _age = *ptr;
