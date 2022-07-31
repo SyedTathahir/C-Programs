@@ -1,5 +1,8 @@
 #include<stdio.h>
 
+void sqaure(int n);
+void _square(int *n);
+
 int main(){
 
     /*
@@ -68,7 +71,7 @@ int main(){
   float price = 100.00;
   float *ptr = &price;
   float **pptr = &*ptr;
-  */
+  
  //Q.print value of i from its pointer to pointer?
     int i = 5;
     int *ptr = &i;
@@ -77,8 +80,31 @@ int main(){
     printf("%d\n",&pptr);//address of pptr
     printf("%d\n",*pptr);// adress of ptr
     printf("%d\n",**pptr);// value of pptr
-
+    
+   //Pointers in function call:
+   1.call by value- we pass value of variables as
+   arguements.
+   2.call by Reference- we pass address of variables 
+   as arguments.
+    */
+   int number = 4;
+   square(number);
+   printf("number = %d\n ", number);
+   
+   _square(&number);
+   printf("number = %d\n ", number);
 
 
     return 0;
+}
+//call by value:
+void square (int n ){
+
+    n = n * n;
+    printf("square = %d\n",n);
+}
+//call by Reference:
+void _square(int *n){
+   *n =(*n) * (*n);
+    printf("square = %d\n",*n);
 }
